@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <title>Oconi 24/7</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      color: #1b4d1b;
+    }
+
+    nav {
+      background-color: #2e8b57;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #c4f7c4;
+    }
+
+    .title-line {
+      text-align: center;
+      margin: 40px 0 0 0;
+    }
+
+    .title-line h1 {
+      font-size: 24px;
+      font-weight: normal;
+      display: inline-block;
+      margin: 0 20px;
+      font-family: monospace;
+      letter-spacing: 5px;
+    }
+
+    .title-line::before,
+    .title-line::after {
+      content: "";
+      display: inline-block;
+      width: 150px;
+      height: 2px;
+      background-color: #2e8b57;
+      vertical-align: middle;
+    }
+
+    header {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header .logo {
+      width: 100px;
+      margin-bottom: 15px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .team {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .member {
+      background-color: #f6fff6;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(46, 139, 87, 0.3);
+      padding: 15px;
+      text-align: center;
+      width: 200px;
+      border: 2px solid #2e8b57;
+    }
+
+    .member img {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #2e8b57;
+    }
+
+    .license-doc {
+      border: 2px dashed #2e8b57;
+      padding: 10px;
+      margin: 10px auto;
+      display: inline-block;
+      background-color: #f9fff9;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    button {
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #2e8b57;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title-line">
+    <h1>OCONI 24/7</h1>
+  </div>
+
+  <!-- Navigācija -->
+  <nav>
+    <a href="#par">Par Mums</a>
+    <a href="#komanda">Komanda</a>
+    <a href="#licences">Licences</a>
+    <a href="#partneri">Partneri</a>
+    <a href="#kontakti">Kontakti</a>
+  </nav>
+
+  <!-- Galvene -->
+  <header id="par">
+    <img src="atlantic.png" alt="Atlantic Logo" class="logo">
+    <p>Būvniecība, remonti, izlietnes, mājas, bankomāti un vairāk!</p>
+  </header>
+
+  <!-- Par Mums -->
+  <div class="section">
+    <h2>Mūsu misija</h2>
+    <p>Nodrošināt legālus un kvalitatīvus būvniecības, montāžas un infrastruktūras pakalpojumus, sadarbojoties ar pilsētas pārvaldi un sabiedrību.</p>
+  </div>
+
+  <!-- Komanda -->
+  <div class="section" id="komanda">
+    <h2>Komanda</h2>
+    <div class="team">
+      <div class="member">
+        <img src="Muzikants.png" alt="Mikus Muzzikants">
+        <h3>Mikus Muzzikants</h3>
+        <p>Remonta speciālists</p>
+      </div>
+      <div class="member">
+        <img src="Arturs.png" alt="Artūrs Tekutis">
+        <h3>Artūrs Tekutis</h3>
+        <p>Būvniecības vadītājs</p>
+      </div>
+      <div class="member">
+        <img src="Gusits.png" alt="Gusīts Spaiders">
+        <h3>Gusīts Spaiders</h3>
+        <p>Tehniskais meistars</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Licences -->
+  <div class="section" id="licences">
+    <h2>Licences un Atļaujas</h2>
+    <div class="license-doc">
+      <p><strong>Reģistrācijas Nr.:</strong> ATL-OCN-00971</p>
+      <p><strong>Izsniegts:</strong> Los Santos City Council</p>
+      <p><strong>Statuss:</strong> Apstiprināts, spēkā līdz 2030. gada jūnijam</p>
+    </div>
+    <img src="Los.png" alt="Licences dokuments" width="80%">
+  </div>
+
+  <!-- Partneri -->
+  <div class="section" id="partneri">
+    <h2>Partneri</h2>
+    <p>Sadarbojamies ar: Los Santos Bank | Atlantic Piegādes | San Andreas Utilities</p>
+  </div>
+
+  <!-- Kontakti -->
+  <div class="section" id="kontakti">
+    <h2>Kontakti</h2>
+    <form>
+      <input type="text" placeholder="Tavs vārds (RP)" required>
+      <input type="email" placeholder="Tava e-pasta adrese (RP)" required>
+      <textarea rows="4" placeholder="Tava ziņa pilsētas pārvaldei..." required></textarea>
+      <button type="submit">Nosūtīt</button>
+    </form>
+  </div>
+
+  <!-- Kājene -->
+  <footer>
+    <p>&copy; 2025 Oconi 24/7. Visas tiesības aizsargātas.</p>
+  </footer>
+
+</body>
+</html>
